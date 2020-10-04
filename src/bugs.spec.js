@@ -16,7 +16,7 @@ describe("bugsSlice",()=>{
     it("should handle the addBug action",async ()=>{
         //Arrange
         const bug={description:"a"};
-        const savedBug={...bug,id:1,resolved:false};
+        const savedBug={...bug,id:1,resolved:false}
         fakeAxios.onPost("/bugs").reply(200,savedBug);
 
     //Act
